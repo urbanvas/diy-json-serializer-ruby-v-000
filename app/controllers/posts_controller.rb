@@ -1,3 +1,5 @@
+require 'pry'
+
 class PostsController < ApplicationController
   before_action :set_post, only: [:show, :edit, :update]
 
@@ -11,7 +13,8 @@ class PostsController < ApplicationController
   end
 
   def show
-    @post = Post.find(params[:id])
+    # @post = Post.find(params[:id])
+    # binding.pry
   end
 
   def new
